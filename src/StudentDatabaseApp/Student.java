@@ -9,7 +9,7 @@ public class Student {
     private int balance;
     private ArrayList<Course> courses;
 
-    public Student(String name, int year, String uniqueID, int balance) {
+    public Student(String name, int year, int balance) {
         this.name = name;
         this.year = year;
         this.balance = balance;
@@ -58,6 +58,6 @@ public class Student {
     }
 
     public void setBalance(int balance) {
-        this.balance = balance;
+        this.balance += balance;
     }
 }
